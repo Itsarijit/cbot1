@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Custom suite]" parallel="classes">
+  <listeners>
+    <listener class-name="cukeTests.TestNGExecutionListener"/>
+  </listeners>
+  <test name="CBot Tests bu user1">
+    <classes>
+      <class name="cukeTests.RunCukesByFeatureCBot"/>
+    </classes>
+  </test> <!-- CBot Tests bu user1 -->
+</suite> <!-- Failed suite [Custom suite] -->

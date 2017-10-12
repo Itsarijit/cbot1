@@ -1,0 +1,240 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3366419,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.beforescenario(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Test FaceBook Conversation",
+        "description": "",
+        "id": "marie-chatbot-test-feature;test-facebook-conversation;get-started;2",
+        "after": [
+          {
+            "result": {
+              "duration": 92371,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.afterscenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 640541965,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "FaceBook user is \"fb_user_1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.facebook_user_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 280237,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"fb_user_1\" says in chat \"[Get started]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 1
+                },
+                {
+                  "val": "[Get started]",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.says_in_chat(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13951182,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Marie says to \"fb_user_1\" \"Dag {user_name}! Heb je een vraag over ING-bankkaarten? Dan kan onze digitale assistente, Marie, je helpen in het Engels. Het ING Webcare-team is nog steeds beschikbaar om je te helpen in het Nederlands. Wil je met Marie over ING-bankkaarten praten?\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 15
+                },
+                {
+                  "val": "Dag {user_name}! Heb je een vraag over ING-bankkaarten? Dan kan onze digitale assistente, Marie, je helpen in het Engels. Het ING Webcare-team is nog steeds beschikbaar om je te helpen in het Nederlands. Wil je met Marie over ING-bankkaarten praten?",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.marie_says_to(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@mariebot1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79877,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.beforescenario(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Test FaceBook Conversation",
+        "description": "",
+        "id": "marie-chatbot-test-feature;test-facebook-conversation;get-started;3",
+        "after": [
+          {
+            "result": {
+              "duration": 66936,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.afterscenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 64258,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "FaceBook user is \"fb_user_1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefs.facebook_user_is(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3106708,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "\"fb_user_1\" says in chat \"[Ja]\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 1
+                },
+                {
+                  "val": "[Ja]",
+                  "offset": 26
+                }
+              ],
+              "location": "StepDefs.says_in_chat(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 458286,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Marie says to \"fb_user_1\" \"Excellent! My name is Marie, pleased to meet you! I can activate your card abroad, block it, check the delivery status, order a new one, reset your pin code etc. Just ask me\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "fb_user_1",
+                  "offset": 15
+                },
+                {
+                  "val": "Excellent! My name is Marie, pleased to meet you! I can activate your card abroad, block it, check the delivery status, order a new one, reset your pin code etc. Just ask me",
+                  "offset": 27
+                }
+              ],
+              "location": "StepDefs.marie_says_to(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@mariebot1"
+          }
+        ]
+      }
+    ],
+    "name": "Marie ChatBot Test Feature",
+    "description": "",
+    "id": "marie-chatbot-test-feature",
+    "keyword": "Feature",
+    "uri": "CBot_10-5-2017.feature",
+    "tags": [
+      {
+        "line": 2,
+        "name": "@mariebot1"
+      }
+    ]
+  }
+]

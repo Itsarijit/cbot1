@@ -1,0 +1,339 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3421306,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.beforescenario(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Navigate Post-Login Landing Page with new Browser session",
+        "description": "",
+        "id": "ipa-application-login;navigate-post-login-landing-page-with-new-browser-session;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 61135,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.afterscenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3195816787,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"chrome\" session is new",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefs.session_is_new(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5392060178,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User try to navigate \"https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm\" it redirect to \"https://t4.ingcbportal.intranet/xsso/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm",
+                  "offset": 22
+                },
+                {
+                  "val": "https://t4.ingcbportal.intranet/xsso/",
+                  "offset": 101
+                }
+              ],
+              "location": "StepDefs.user_try_to_navigate_it_redirect_to(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4481882964,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters valid \"EMPLAD01VW\" and \"EMPLAD01VW\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "EMPLAD01VW",
+                  "offset": 19
+                },
+                {
+                  "val": "EMPLAD01VW",
+                  "offset": 36
+                }
+              ],
+              "location": "StepDefs.user_enters_valid_and(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 13618735,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User get into \"https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm",
+                  "offset": 15
+                }
+              ],
+              "location": "StepDefs.user_get_into(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ipa"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 52656,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.beforescenario(Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Navigate Post-Login Landing Page with old Browser session(Non-Log off)",
+        "description": "",
+        "id": "ipa-application-login;navigate-post-login-landing-page-with-old-browser-session(non-log-off);;2",
+        "after": [
+          {
+            "result": {
+              "duration": 115576,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.afterscenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 729599,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "\"chrome\" session is old(From Last Scenario)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefs.session_is_old_From_Last_Scenario(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2298962899,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User try to navigate \"https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm\" it goes directly without Login",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm",
+                  "offset": 22
+                }
+              ],
+              "location": "StepDefs.user_try_to_navigate_it_goes_directly_without_Login(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6491246374,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user log-out without closing browser",
+            "match": {
+              "location": "StepDefs.user_log_out_without_closing_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ipa"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 168678,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.beforescenario(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Navigate Post-Login Landing Page with old Browser session(Loged off)",
+        "description": "",
+        "id": "ipa-application-login;navigate-post-login-landing-page-with-old-browser-session(loged-off);;2",
+        "after": [
+          {
+            "result": {
+              "duration": 136549,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefs.afterscenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 138334,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "\"chrome\" session is old(From Last Scenario)",
+            "match": {
+              "arguments": [
+                {
+                  "val": "chrome",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefs.session_is_old_From_Last_Scenario(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5079226420,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User try to navigate \"https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm\" it redirect to \"https://t4.ingcbportal.intranet/xsso/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://t4.ingcbportal.intranet/ipa/ipa-preferences/index.htm",
+                  "offset": 22
+                },
+                {
+                  "val": "https://t4.ingcbportal.intranet/xsso/",
+                  "offset": 101
+                }
+              ],
+              "location": "StepDefs.user_try_to_navigate_it_redirect_to(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 684939961,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user close Browser",
+            "match": {
+              "location": "StepDefs.user_close_Browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@ipa"
+          }
+        ]
+      }
+    ],
+    "name": "IPA Application Login",
+    "description": "",
+    "id": "ipa-application-login",
+    "keyword": "Feature",
+    "uri": "IPALogin.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@ipa"
+      }
+    ]
+  }
+]
